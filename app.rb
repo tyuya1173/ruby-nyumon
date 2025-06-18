@@ -4,7 +4,9 @@ get '/' do
     'Hello, World!'
 end
 
+require './db/todos'
 get '/todos' do
-    @todos = ["TODO1", "TODO2", "TODO3"]
+    rows = DB.execute('SELECT * FROM todos')
+    @todos = rows.map { |row| row[1] }
     erb :todos
 end

@@ -62,11 +62,15 @@ GEM
       rack-protection (= 4.1.1)
       rack-session (>= 2.0.0, < 3)
       tilt (~> 2.0)
+    sqlite3 (2.7.0)
+      mini_portile2 (~> 2.8.0)
+    sqlite3 (2.7.0-arm64-darwin)
     tilt (2.6.0)
     xpath (3.2.0)
       nokogiri (~> 1.8)
 
 PLATFORMS
+  arm64-darwin-24
   ruby
 
 DEPENDENCIES
@@ -76,6 +80,7 @@ DEPENDENCIES
   rackup
   rspec
   sinatra
+  sqlite3
 
 BUNDLED WITH
    2.6.8
